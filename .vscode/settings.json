@@ -1,0 +1,7 @@
+{
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "liveServer.settings.CustomBrowser": "microsoft-edge",
+    "liveServer.settings.NoBrowser": false
+}
