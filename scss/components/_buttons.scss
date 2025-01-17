@@ -59,3 +59,20 @@
   }
   
 }
+.btn-secondary{
+  border: 0.1rem solid $primary;
+  color: $primary;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: capitalize;
+  display: inline-block;
+  min-width: 16%;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.4rem;
+ &:hover {
+    @include gradient;
+  
+    color: white;
+  }
+
+}

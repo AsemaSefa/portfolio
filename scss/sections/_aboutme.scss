@@ -1,11 +1,21 @@
 @use "../custom" as *;
 @use "../components/mixins" as *;
+@use "../components/buttons" as *;
 
 .about_me {
   position: relative;
   min-height: 50vh;
   margin: 7rem 0;
+  .resume {
+    margin: 1rem;
+    display: inline;
+  }
   .container {
+    @include media-breakpoint-down(sm) {
+      padding: 0.9rem;
+      font-size: smaller;
+    }
+
     // @include absolute-center;
     width: 90%;
     padding: 2rem;
@@ -18,7 +28,7 @@
       height: auto;
       margin: 2rem;
       @include media-breakpoint-down(md) {
-        width:150px ;
+        width: 150px;
       }
       img {
         width: 100%;

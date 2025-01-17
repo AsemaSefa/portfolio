@@ -11918,6 +11918,22 @@ textarea.form-control-lg {
   }
 }
 
+.btn-secondary {
+  border: 0.1rem solid #4e02c9;
+  color: #4e02c9;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: capitalize;
+  display: inline-block;
+  min-width: 16%;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.4rem;
+}
+.btn-secondary:hover {
+  background: linear-gradient(to right, rgba(78, 2, 201, 0.95), rgba(3, 159, 173, 0.95));
+  color: white;
+}
+
 .display-2 {
   margin-bottom: 1.5rem;
 }
@@ -12004,11 +12020,21 @@ textarea.form-control-lg {
   min-height: 50vh;
   margin: 7rem 0;
 }
+.about_me .resume {
+  margin: 1rem;
+  display: inline;
+}
 .about_me .container {
   width: 90%;
   padding: 2rem;
   background-color: #fff;
   border-radius: 1rem;
+}
+@media (max-width: 575.98px) {
+  .about_me .container {
+    padding: 0.9rem;
+    font-size: smaller;
+  }
 }
 .about_me .container .image-containers {
   width: 300px;
@@ -12202,22 +12228,35 @@ header {
 .portfolio .container {
   background-color: #f8f9fa;
   border-radius: 6px;
-  padding: 2.5rem;
+  width: 90%;
 }
-.portfolio .image-containers {
-  width: 300px;
+.portfolio .container .image-containers {
+  width: 95%;
   height: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
-.portfolio .image-containers img {
+.portfolio .container .image-containers img {
   width: 100%;
   height: 100%;
+  border-radius: 0.4rem 0.4rem 0 0;
 }
-.portfolio .image-containers:hover {
+.portfolio .container .image-containers:hover {
   transform: scale(103%, 103%);
   transition-duration: 5s;
 }
-.portfolio .image-containers:hover img {
+.portfolio .container .image-containers:hover img {
   filter: grayscale(30%);
+}
+.portfolio .container .portfolio-item {
+  border: 0.1rem solid #4e02c9;
+  padding: 1.5rem 1rem;
+  border-radius: 0.4rem;
+}
+.portfolio .container .col-lg-4 {
+  margin-left: 15px;
+  width: 30.6%;
 }
 
 .services {
