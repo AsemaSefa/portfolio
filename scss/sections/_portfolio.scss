@@ -33,9 +33,18 @@
       border-radius: 0.4rem;
       // margin: 0.2rem;
     }
-    .col-lg-4 {
-      margin-left: 15px;
-      width: 30.6%;
+  
+    @include media-breakpoint-up(md) {
+      .col-md-6 {
+        margin-left: 15px;
+        width: 45.6%;
+      }
+    }
+      @include media-breakpoint-up(lg) {
+      .col-lg-4 {
+        margin-left: 15px;
+        width: 30.6%; 
+      }
     }
   }
 }

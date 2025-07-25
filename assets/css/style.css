@@ -12254,9 +12254,17 @@ header {
   padding: 1.5rem 1rem;
   border-radius: 0.4rem;
 }
-.portfolio .container .col-lg-4 {
-  margin-left: 15px;
-  width: 30.6%;
+@media (min-width: 768px) {
+  .portfolio .container .col-md-6 {
+    margin-left: 15px;
+    width: 45.6%;
+  }
+}
+@media (min-width: 992px) {
+  .portfolio .container .col-lg-4 {
+    margin-left: 15px;
+    width: 30.6%;
+  }
 }
 
 .services {
